@@ -12,7 +12,8 @@
 	<title>Grilltastic - Professional Grill Steam Cleaning System</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 	<link href="style.css" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=EB+Garamond|Ovo" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ovo" rel="stylesheet">
 </head>
 <body>
 	<!-- NAVBAR -->
@@ -21,36 +22,34 @@
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		<a class="navbar-brand active" href="#">Grilltastic</a>
+		<a class="navbar-brand active" href="/test-index.html">Grilltastic</a>
 		<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 			<ul class="navbar-nav mr-auto mt-2 mt-lg-0 navbar-left">
 				<li class="nav-item">
-					<a class="nav-link padding-text title" href="#">Product</a>
+					<a class="nav-link padding-text title" href="/products.html">Product</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link padding-text title" href="#">About Us</a>
+					<a class="nav-link padding-text title" href="/about.html">About Us</a>
 				</li>
-				<div class="hidden-nav-links">
-					<li class="nav-item">
-						<a class="nav-link title" href="#">In the News</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link title" href="#">Blog</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link title" href="#">Shop</a>
-					</li>
-				</div>
+				<li class="nav-item hidden-nav-links">
+					<a class="nav-link title" href="/news.html">In the News</a>
+				</li>
+				<li class="nav-item hidden-nav-links">
+					<a class="nav-link title" href="/blog.html">Blog</a>
+				</li>
+				<li class="nav-item hidden-nav-links">
+					<a class="nav-link title" href="#">Shop</a>
+				</li>
 			</ul>
 		</div>
 		<div class="navbar-right">
 			<div class="collapse navbar-collapse">
 				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 					<li class="nav-item">
-						<a class="nav-link padding-text title" href="#">In the News</a>
+						<a class="nav-link padding-text title" href="/news">In the News</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link padding-text title" href="#">Blog</a>
+						<a class="nav-link padding-text title" href="/blog">Blog</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link padding-text title" href="#">Shop</a>
@@ -68,75 +67,90 @@
 	<!-- HERO ROLLING IMAGES END -->
 
 	<!-- TAB BAR -->
-	<div class="container-fluid tab-bar">
-		<span class="padding-text title">Overview</span>
-	</div>
-	<!-- TAB BAR END -->
-
-	<!-- OVERVIEW -->
-	<div class="overview-div">
-		<div class="title">
-			<h5 class="overview-title">World’s Most</h2>
-			<h3 class="overview-title">Powerful</h3>
-			<h5 class="overview-title">Grill Cleaner</h2>
+	<div class="main-content" id="overview">
+		<div class="container-fluid tab-bar sticky-bar">
+			<span class="padding-text title"><a href="#overview">Overview</a></span>
+			<span class="padding-text title"><a href="#product-benefits">Product Benefits</a></span>
 		</div>
+		
+		<!-- TAB BAR END -->
 
-		<div class="overview-text">
-			For the first time ever, a grill cleaner utilizing a 1500 watt steam generator 
-			is available for home use! Delivers a powerful jet of steam that obliterates 
-			grease, grime, and germs. Stainless steel grill brush scrubs while the steam 
-			blasts, providing a synergy that will keep your grill as pristine as the day 
-			you bought it. Put down those hand irritating steel wool pads and pick up the 
-			Grilltastic to start cleaning your grill easily and immaculately today!
-		</div>
-
-		<div class="container-fluid overview-image">
-		</div>
-
-	</div>
-	<!-- OVERVIEW END -->
-
-	<div class="container-fluid features-div">
-		<div class="row">
-			<div class="col-md features-gray">
-				<h5 class="title">chore no more</h5>
-				It’s unanimous - cleaning a grill with traditional methods is a tedious, 
-				laborious and dreaded task. Unlike grill cleaners that merely spray tepid 
-				water on a grill that you must preheat to passively produce non-directed 
-				steam, the Sienna Grilltastic system generates precisely directed, 
-				superheated LIVE STEAM that blasts away hardened buildup with the touch of 
-				a button! No preheating necessary. You will soon find that cleaning your 
-				grill can be quick, satisfying, and even fun!
+		<!-- OVERVIEW -->
+		<div class="overview-div">
+			<div class="title">
+				<h5 class="overview-title">World’s Most</h5>
+				<h3 class="overview-title">Powerful</h3>
+				<h5 class="overview-title">Grill Cleaner</h5>
 			</div>
-			<div class="col-md features-white">
-				<h5 class="title">withstands the test of time</h5>
-				Built to last, this ultimately durable sanitation revolution will stand 
-				strong after years of routine use on even the most disastrous of grilling 
-				spills and misadventures. Precision engineered and optimally constructed 
-				with only the most rugged and rust resistant materials, your Grilltastic 
-				barbecue steam cleaner will remain as effective after years of use as the 
-				day you first took it out of the box.
+
+			<div class="overview-text">
+				For the first time ever, a grill cleaner utilizing a 1500 watt steam generator 
+				is available for home use! Delivers a powerful jet of steam that obliterates 
+				grease, grime, and germs. Stainless steel grill brush scrubs while the steam 
+				blasts, providing a synergy that will keep your grill as pristine as the day 
+				you bought it. Put down those hand irritating steel wool pads and pick up the 
+				Grilltastic to start cleaning your grill easily and immaculately today!
+			</div>
+
+			<div class="container-fluid overview-image">
+			</div>
+
+		</div>
+		<!-- OVERVIEW END -->
+
+		<!-- FEATURES -->
+		<div class="container-fluid features-div" id="product-benefits">
+			<div class="row">
+				<div class="col-md features-gray">
+					<h5 class="title">chore no more</h5>
+					It’s unanimous - cleaning a grill with traditional methods is a tedious, 
+					laborious and dreaded task. Unlike grill cleaners that merely spray tepid 
+					water on a grill that you must preheat to passively produce non-directed 
+					steam, the Sienna Grilltastic system generates precisely directed, 
+					superheated LIVE STEAM that blasts away hardened buildup with the touch of 
+					a button! No preheating necessary. You will soon find that cleaning your 
+					grill can be quick, satisfying, and even fun!
+				</div>
+				<div class="col-md features-white">
+					<h5 class="title">withstands the test of time</h5>
+					Built to last, this ultimately durable sanitation revolution will stand 
+					strong after years of routine use on even the most disastrous of grilling 
+					spills and misadventures. Precision engineered and optimally constructed 
+					with only the most rugged and rust resistant materials, your Grilltastic 
+					barbecue steam cleaner will remain as effective after years of use as the 
+					day you first took it out of the box.
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md features-white features-collapse-gray">
+					<h5 class="title">100% eco-friendly sanitation</h5>
+					Cleaning the places where your food is prepared with a long list of toxic 
+					chemicals can be hazardous to you, family, friends, and the environment. 
+					In addition to creating a health hazard, these abrasive chemicals can place 
+					substantial wear and tear on your grill grates. With the chemical-free 
+					cleansing power of steam, no chemicals are required to make your grill 
+					spotless and sanitary, and using Grilltastic will even add years to its 
+					lifespan!
+				</div>
+				<div class="col-md features-gray features-collapse-white">
+					<h5 class="title">100% satisfaction guaranteed</h5>
+					Sienna proudly stands behind the quality of our appliances and has a 
+					twenty year proven track record of being on the cutting edge of steam 
+					cleaning technology.
+				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-md features-white features-collapse-gray">
-				<h5 class="title">100% eco-friendly sanitation</h5>
-				Cleaning the places where your food is prepared with a long list of toxic 
-				chemicals can be hazardous to you, family, friends, and the environment. 
-				In addition to creating a health hazard, these abrasive chemicals can place 
-				substantial wear and tear on your grill grates. With the chemical-free 
-				cleansing power of steam, no chemicals are required to make your grill 
-				spotless and sanitary, and using Grilltastic will even add years to its 
-				lifespan!
-			</div>
-			<div class="col-md features-gray features-collapse-white">
-				<h5 class="title">100% satisfaction guaranteed</h5>
-				Sienna proudly stands behind the quality of our appliances and has a 
-				twenty year proven track record of being on the cutting edge of steam 
-				cleaning technology.
-			</div>
+		<!-- FEATURES END -->
+
+		<!-- SMALL PHOTOS -->
+
+		<!-- SMALL PHOTOS END -->
+
+		<!-- FOOTER -->
+		<div class="container-fluid tab-bar">
+			facebook twitter instagram youtube
 		</div>
-	</div>
+</div>
 	
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -13,6 +13,9 @@ html, body {
 	height: 90px;
 	font-family: 'EB Garamond', serif;
 }
+.main-content {
+	width: 100%;
+}
 
 /* NAVBAR */
 .navbar {
@@ -57,6 +60,13 @@ html, body {
 	border-top: 1px solid lightgray;
 	border-bottom: 1px solid lightgray;
 	padding: 16px;
+	background-color: white;
+}
+.sticky-bar {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 50px;
+	z-index: 120;
 }
 
 /* OVERVIEW */
@@ -94,9 +104,6 @@ html, body {
 	.navbar .navbar-nav .padding-text {
 		padding: 5px 0px;
 	}
-	.overview-text {
-		width: 100%;
-	}
 }
 
 @media (max-width:767px) {
@@ -105,5 +112,8 @@ html, body {
 	}
 	.features-collapse-white {
 		background-color: white;
+	}
+	.overview-text {
+		width: 100%;
 	}
 }
