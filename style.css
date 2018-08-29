@@ -1,3 +1,5 @@
+/* <!-- SITE BY BY MARIA T. ROJO - HTTPS://WWW.MARIATROJO.COM --> */
+
 * {
 	vertical-align: baseline;
 	font-weight: inherit;
@@ -127,6 +129,17 @@ a:hover, .navbar .collapse .navbar-nav .nav-link:hover {
 	text-align: left;
 	font-size: 11px;
 	padding: 5px 30px;
+}
+
+/* *******ABOUT US PAGE******* */
+.about-div {
+	padding: 100px 50px;
+}
+.about-title {
+	padding-bottom: 30px;
+}
+.team-div {
+	background-color: #e8e7ee;
 }
 
 /* RESPONSIVE */
