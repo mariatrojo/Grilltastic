@@ -131,14 +131,24 @@ a:hover, .navbar .collapse .navbar-nav .nav-link:hover {
 	padding: 5px 30px;
 }
 
+/* *******PRODUCTS PAGE******* */
+.hero-div iframe {
+	width: 100vw;
+	height: 56.25vw;
+}
+.italic {
+	font-style: italic;
+	padding-right: 7px;
+	font-size: 20px;
+}
 /* *******ABOUT US PAGE******* */
-.about-div {
+.text-div {
 	padding: 100px 50px;
 }
-.about-title {
+.text-title {
 	padding-bottom: 30px;
 }
-.team-div {
+.gray-div {
 	background-color: #e8e7ee;
 }
 
