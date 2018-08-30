@@ -141,6 +141,14 @@ a:hover, .navbar .collapse .navbar-nav .nav-link:hover {
 	padding-right: 7px;
 	font-size: 20px;
 }
+.call-out-photo {
+	width: 100%;
+}
+.call-out-div {
+	display: flex;
+	text-align: center;
+	align-items: center;
+}
 /* *******ABOUT US PAGE******* */
 .text-div {
 	padding: 100px 50px;
