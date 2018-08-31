@@ -76,6 +76,16 @@ a:hover, .navbar .collapse .navbar-nav .nav-link:hover {
 	top: 50px;
 	z-index: 120;
 }
+.sticky-bar .navbar-toggler {
+	border: 0px;
+	font-size: 13px;
+	position: relative;
+	right: 25px;
+}
+.icon {
+	position: relative;
+	bottom: 1px;
+}
 
 /* OVERVIEW */
 .overview-div {
@@ -165,18 +175,13 @@ a:hover, .navbar .collapse .navbar-nav .nav-link:hover {
 }
 
 /* *******BLOG******* */
-/* .tumblr {
-	position: relative;
-	bottom: 250px;
-	z-index: 0;
-} */
 
 /* RESPONSIVE */
 @media only screen and (max-width: 991px) {
     .hidden-nav-links{
         display: block;
 	}
-	.navbar .navbar-nav .padding-text {
+	.navbar .custom-header-nav .padding-text {
 		padding: 5px 0px;
 	}
 }
@@ -193,8 +198,14 @@ a:hover, .navbar .collapse .navbar-nav .nav-link:hover {
 	}
 }
 
-@media (max-width:320px) {
-	.sticky-bar .title {
-		font-size: 10px;
+@media (max-width:576px) {
+	.navbar .navbar-nav .padding-text {
+		padding: 5px 0px;
 	}
+}
+
+@media (max-width:320px) {
+	/* .sticky-bar .title {
+		font-size: 10px;
+	} */
 }
