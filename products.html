@@ -14,28 +14,31 @@
 		<link href="style.css" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Ovo" rel="stylesheet">
+		<script>
+			$('body').scrollspy({ target: '.sticky-bar' });
+		</script>
 	</head>
-<body>
+<body data-spy="scroll" data-target=".sticky-bar" data-offset="70">
 	<!-- NAVBAR -->
 	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
 
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		<a class="navbar-brand active" href="/test-index.html">Grilltastic</a>
+		<a class="navbar-brand active" href="/index">Grilltastic</a>
 		<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 			<ul class="navbar-nav mr-auto mt-2 mt-lg-0 navbar-left custom-header-nav">
-				<li class="nav-item">
-					<a class="nav-link padding-text title" href="/products.html">Product</a>
+				<li class="nav-item current">
+					<a class="nav-link padding-text title" href="/products">Product</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link padding-text title" href="/about.html">About Us</a>
+					<a class="nav-link padding-text title" href="/about">About Us</a>
 				</li>
 				<li class="nav-item hidden-nav-links">
-					<a class="nav-link title" href="/news.html">In the News</a>
+					<a class="nav-link title" href="/news">In the News</a>
 				</li>
 				<li class="nav-item hidden-nav-links">
-					<a class="nav-link title" href="/blog.html">Blog</a>
+					<a class="nav-link title" href="/blog">Blog</a>
 				</li>
 				<li class="nav-item hidden-nav-links">
 					<a class="nav-link title" href="#">Shop</a>
@@ -71,7 +74,7 @@
 		<!-- 2nd NAVBAR -->
 		<nav class="navbar navbar-expand-sm navbar-light bg-light sticky-bar">
 			<div class="navbar-toggler custom-toggler" data-toggle="collapse" data-target="#navbarTogglerDemo3" aria-controls="navbarTogglerDemo3" aria-expanded="false" aria-label="Toggle navigation">
-				<div class="nav-link title active">Navigation <span class="icon">&or;</span> </div>
+				<div class="nav-link title active">Navigation <img class="icon" src="img/sort-down.png"> </div>
 			</div>
 			<div class="collapse navbar-collapse" id="navbarTogglerDemo3">
 				<ul class="navbar-nav mr-auto mt-2 mt-lg-0 navbar-left">
@@ -92,7 +95,7 @@
 		<!-- OVERVIEW 1 -->
 		<div class="text-div container-fluid row">
 			<div class="col-md-7">
-				<img class="photo" src="img/product-image1.jpg" alt="Call out photo">
+				<img class="photo call-out-photo" src="img/product-image1.jpg" alt="Call out photo">
 			</div>
 			<div class="col-md call-out-div">
 				<p>
@@ -141,12 +144,12 @@
 		<!-- ACCESSORIES -->
 		<div class="text-div container-fluid">
 			<h5 class="title text-title">Accessories</h5>
-			<div class="row">
-				<div class="col">
-					<img class="accessory-photo" src="img/product-image2.jpg">
+			<div class="row small-photos-div">
+				<div class="col-sm">
+					<img class="accessory-photo" src="img/product-image2.jpg" alt="Grilltastic accessories">
 				</div>
-				<div class="col">
-					<img class="accessory-photo" src="img/product-image3.jpg">
+				<div class="col-sm">
+					<img class="accessory-photo2" src="img/product-image3.jpg" alt="Grilltastic accessories">
 				</div>
 			</div>
 		</div>
