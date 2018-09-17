@@ -103,8 +103,9 @@ a:hover, .navbar .collapse .navbar-nav .nav-link:hover {
 }
 .icon {
 	position: relative;
-	bottom: 2px;
-	width: 20px;
+	/* bottom: 2px; */
+	width: 17px;
+	vertical-align: text-bottom;
 }
 .sticky-bar li .active {
 	color: white !important;
@@ -206,12 +207,12 @@ a:hover, .navbar .collapse .navbar-nav .nav-link:hover {
 
 /* RESPONSIVE */
 @media only screen and (max-width: 991px) {
-    .hidden-nav-links{
+    .hidden-nav-links {
         display: block;
 	}
-	.navbar .custom-header-nav .padding-text {
+	/* .navbar .custom-header-nav .padding-text {
 		padding: 5px 0px;
-	}
+	} */
 	.navbar {
 		padding: 8px 16px;
 	}

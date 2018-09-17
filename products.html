@@ -34,8 +34,15 @@
 				<li class="nav-item">
 					<a class="nav-link padding-text title" href="/about">About Us</a>
 				</li>
-				<li class="nav-item hidden-nav-links">
-					<a class="nav-link title" href="/news">In the News</a>
+				<li class="nav-item dropdown hidden-nav-links">
+					<a class="nav-link title" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						In the News
+						<img class="icon" src="img/sort-down.png">
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="/press">Press Releases</a>
+						<a class="dropdown-item" href="/media">Media Coverage</a>
+					</div>
 				</li>
 				<li class="nav-item hidden-nav-links">
 					<a class="nav-link title" href="/blog">Blog</a>
@@ -48,8 +55,14 @@
 		<div class="navbar-right">
 			<div class="collapse navbar-collapse">
 				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-					<li class="nav-item">
-						<a class="nav-link padding-text title" href="/news">In the News</a>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle padding-text title" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							In the News
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+							<a class="dropdown-item" href="/news">Press Releases</a>
+							<a class="dropdown-item" href="/media">Media Coverage</a>
+						</div>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link padding-text title" href="/blog">Blog</a>
@@ -112,29 +125,32 @@
 		<!-- OVERVIEW 2 -->
 		<div class="gray-div text-div container-fluid">
 			<p>
-				<span class="italic">Put an End To Grimy Grills</span>  The Grilltastic barbecue cleaner will thoroughly
-				 clean grills of any size and type - gas, charcoal, propane, electric, and 
-				 smokers alike. With a sleek design and a stainless steel brush attachment, 
-				 you can clean even the hardest to reach corners. There is an easy, anytime 
-				 refill, with no cool down time required for refilling. A 16.5 foot cord 
-				 allows for extended reach.
+				<span class="italic">Put an End To Grimy Grills</span>  The Grilltastic 
+				barbecue cleaner will thoroughly clean grills of any size and type - gas, 
+				charcoal, propane, electric, and smokers alike. With a sleek design and 
+				a stainless steel brush attachment, you can clean even the hardest to 
+				reach corners. There is an easy, anytime refill, with no cool down time 
+				required for refilling. A 16.5 foot cord allows for extended reach.
 			</p>
 			<p>
-				<span class="italic">The Perfect Gift For Any Occasion</span>  The Grilltastic steam grill cleaner makes 
-				a great birthday, holiday, or special gift for the grill master that has 
-				everything. The Grilltastic will be a welcome accessory for the seasoned 
-				pitmaster or the novice griller flipping their first burger.
+				<span class="italic">The Perfect Gift For Any Occasion</span>  
+				The Grilltastic steam grill cleaner makes a great birthday, holiday, or 
+				special gift for the grill master that has everything. The Grilltastic 
+				will be a welcome accessory for the seasoned pitmaster or the novice 
+				griller flipping their first burger.
 			</p>
 			<p>
-				<span class="italic">Simplicity Meets Efficiency</span>  Throw away those rusty wire brushes and harmful
-				 chemicals and try our simple solution to this nasty, foreboding chore. With 
-				 the press of a button you will control a direct, cleansing steam which will 
-				 melt away even the most stubborn buildups. The steam option has an on/off 
-				 mode and can be used on a hot or cold grill.
+				<span class="italic">Simplicity Meets Efficiency</span>  
+				Throw away those rusty wire brushes and harmful chemicals and try our 
+				simple solution to this nasty, foreboding chore. With the press of a 
+				button you will control a direct, cleansing steam which will melt away 
+				even the most stubborn buildups. The steam option has an on/off mode 
+				and can be used on a hot or cold grill.
 			</p>
 			<p>
-				<span class="italic">Go Beyond the Grill</span>  Compatible with the optional Grilltastic accessory kit 
-				that allows for a wide range of cleaning options. Attachments efficiently clean 
+				<span class="italic">Go Beyond the Grill</span>  
+				Compatible with the optional Grilltastic accessory kit that allows for 
+				a wide range of cleaning options. Attachments efficiently clean 
 				additional outdoor surfaces.
 			</p>
 			<div id="accessories"></div>
@@ -184,6 +200,22 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+		$(document).ready(function(){
+			$('a[href^="#"]').on('click', function(event) {
+				var target = $(this.getAttribute('href'));
+				if( target.length ) {
+					event.preventDefault();
+					$('html, body').stop().animate({
+						scrollTop: target.offset().top
+					}, 1000);
+				}
+			});
+		});
+
+		$('body').scrollspy({ target: '.sticky-bar' });
+</script>
 </body>
 </html>
 <!-- SITE BY BY MARIA T. ROJO - HTTPS://WWW.MARIATROJO.COM -->

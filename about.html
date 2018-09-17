@@ -34,8 +34,15 @@
 				<li class="nav-item current">
 					<a class="nav-link padding-text title" href="/about">About Us</a>
 				</li>
-				<li class="nav-item hidden-nav-links">
-					<a class="nav-link title" href="/news">In the News</a>
+				<li class="nav-item dropdown hidden-nav-links">
+					<a class="nav-link title" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						In the News
+						<img class="icon" src="img/sort-down.png">
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="/press">Press Releases</a>
+						<a class="dropdown-item" href="/media">Media Coverage</a>
+					</div>
 				</li>
 				<li class="nav-item hidden-nav-links">
 					<a class="nav-link title" href="/blog">Blog</a>
@@ -48,8 +55,14 @@
 		<div class="navbar-right">
 			<div class="collapse navbar-collapse">
 				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-					<li class="nav-item">
-						<a class="nav-link padding-text title" href="/news">In the News</a>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle padding-text title" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							In the News
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+							<a class="dropdown-item" href="/press">Press Releases</a>
+							<a class="dropdown-item" href="/media">Media Coverage</a>
+						</div>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link padding-text title" href="/blog">Blog</a>
@@ -96,33 +109,32 @@
 		<div class="text-div container-fluid">
 			<h5 class="title text-title">About Anvid Products, Inc.</h5>
 			<p>
-				Anvid Products has more than twenty years of steam appliance design and 
-				manufacturing experience in the floor care, all purpose cleaning, and garment 
-				care category that has provided us greater insight than any other supplier in 
+				Anvid Products has more than 20 years of steam appliance design and 
+				manufacturing experience in the floor care, all-purpose cleaning, and garment 
+				care category. This experience has provided us greater insight than any other supplier in 
 				the industry. 
 			</p>
 			<p>
-				Sienna Brand products were designed and created to improve the lifestyle of 
-				consumers by providing efficient environmentally clean and easy to use 
-				appliances. Our look is clean, simple, high quality, built to last and 
-				maintenance free. At Sienna we are constantly researching and developing new 
-				product concepts.
+				Anvid’s flagship product line, Sienna, offers devices that were designed to 
+				improve the lifestyle of consumers by providing efficient, environmentally 
+				clean, and easy-to-use appliances. Our look is clean, simple, high-quality, 
+				built-to-last and maintenance-free. At Sienna we are constantly researching 
+				and developing new product concepts.
 			</p>
 			<p>
-				Sienna brand steam appliances offers a full range of household appliances 
-				that steam, press, refresh, sanitize, clean, and deodorize just about 
-				everything in the home and office. From floors to clothing to furniture to 
-				even the kitchen sink, we do it all! The best part is our Sienna products 
-				do all these things in a chemical free and environmentally friendly way. 
-				Sienna endorses and incorporates green technology in all its products. 
-				That's putting the power and germ killing effects of clean and natural 
-				steam where it counts.
+				Sienna offers a full range of household appliances that steam, press, refresh, 
+				sanitize, clean, and deodorize just about everything in the home and office. 
+				From floors to clothing to furniture, even to the kitchen sink, we do it all! 
+				The best part is our Sienna products do all these things in a chemical-free 
+				and environmentally friendly way; in fact,Sienna endorses and incorporates 
+				green technology in all its products. That's putting the power and germ-killing 
+				effects of clean and natural steam where it counts.
 			</p>
 			<div id="team"></div>
 			<p>
-				Sienna products have made millions of believers throughout Europe and now 
-				we are bringing our intelligent and highly practical products to the USA. 
-				Sienna has always been on the cutting edge of steam generating technology. 
+				Sienna products have made millions of believers throughout Europe, and now 
+				we are bringing our intelligent and highly practical products to the U.S. 
+				Sienna has always been on the cutting edge of steam-generating technology. 
 				So for anything new in steam, look to Sienna!
 			</p>
 		</div>
@@ -170,6 +182,22 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+		$(document).ready(function(){
+			$('a[href^="#"]').on('click', function(event) {
+				var target = $(this.getAttribute('href'));
+				if( target.length ) {
+					event.preventDefault();
+					$('html, body').stop().animate({
+						scrollTop: target.offset().top
+					}, 1000);
+				}
+			});
+		});
+
+		$('body').scrollspy({ target: '.sticky-bar' });
+</script>
 </body>
 </html>
 <!-- SITE BY BY MARIA T. ROJO - HTTPS://WWW.MARIATROJO.COM -->

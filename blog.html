@@ -31,10 +31,17 @@
 				<li class="nav-item">
 					<a class="nav-link padding-text title" href="/about">About Us</a>
 				</li>
-				<li class="nav-item hidden-nav-links">
-					<a class="nav-link title" href="/news">In the News</a>
+				<li class="nav-item dropdown hidden-nav-links">
+					<a class="nav-link title" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						In the News
+						<img class="icon" src="img/sort-down.png">
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="/press">Press Releases</a>
+						<a class="dropdown-item" href="/media">Media Coverage</a>
+					</div>
 				</li>
-				<li class="nav-item hidden-nav-links">
+				<li class="nav-item hidden-nav-links current">
 					<a class="nav-link title" href="/blog">Blog</a>
 				</li>
 				<li class="nav-item hidden-nav-links">
@@ -45,8 +52,14 @@
 		<div class="navbar-right">
 			<div class="collapse navbar-collapse">
 				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-					<li class="nav-item">
-						<a class="nav-link padding-text title" href="/news">In the News</a>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle padding-text title" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							In the News
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+							<a class="dropdown-item" href="/press">Press Releases</a>
+							<a class="dropdown-item" href="/media">Media Coverage</a>
+						</div>
 					</li>
 					<li class="nav-item current">
 						<a class="nav-link padding-text title" href="/blog">Blog</a>
