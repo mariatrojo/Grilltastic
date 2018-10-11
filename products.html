@@ -28,8 +28,15 @@
 		<a class="navbar-brand active" href="/">Grilltastic</a>
 		<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 			<ul class="navbar-nav mr-auto mt-2 mt-lg-0 navbar-left custom-header-nav">
-				<li class="nav-item current">
-					<a class="nav-link padding-text title" href="/products">Product</a>
+				<li class="nav-item current dropdown">
+					<a class="nav-link dropdown-toggle padding-text title" href="/products" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Product
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+						<a class="dropdown-item" href="#overview">Overview</a>
+						<a class="dropdown-item" href="#accessories">Accessories</a>
+						<a class="dropdown-item" href="#shop">Where to Buy</a>
+					</div>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link padding-text title" href="/about">About Us</a>
@@ -96,7 +103,7 @@
 			<div class="collapse navbar-collapse" id="navbarTogglerDemo3">
 				<ul class="navbar-nav mr-auto mt-2 mt-lg-0 navbar-left">
 					<li class="nav-item">
-						<a class="nav-link padding-text title active" href="#overview">Overview</a>
+						<a class="nav-link padding-text title active" href="#overview">Features</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link padding-text title" href="#accessories">Accessories</a>
