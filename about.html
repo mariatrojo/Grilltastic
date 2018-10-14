@@ -32,7 +32,14 @@
 					<a class="nav-link padding-text title" href="/products">Product</a>
 				</li>
 				<li class="nav-item current">
-					<a class="nav-link padding-text title" href="/about">About Us</a>
+					<a class="nav-link padding-text title dropdown-toggle" href="/about" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						About Us
+					</a>
+					<div class="dropdown-menu" style="right: auto; left: auto;" aria-labelledby="navbarDropdown2">
+						<a class="dropdown-item" href="#about">About Anvid Products, Inc.</a>
+						<a class="dropdown-item" href="#team">Management Team</a>
+						<a class="dropdown-item" href="#support">Support</a>
+					</div>
 				</li>
 				<li class="nav-item dropdown hidden-nav-links">
 					<a class="nav-link title" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -89,7 +96,7 @@
 	<div class="main-content" id="about">
 
 		<!-- 2nd NAVBAR -->
-		<nav class="navbar navbar-expand-sm navbar-light bg-light sticky-bar">
+		<!-- <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-bar">
 			<button class="navbar-toggler custom-toggler" data-toggle="collapse" data-target="#navbarTogglerDemo3" aria-controls="navbarTogglerDemo3" aria-expanded="false" aria-label="Toggle navigation">
 				<div class="nav-link title active">Navigation <img class="icon" src="img/sort-down.png"> </div>
 			</button>
@@ -106,7 +113,7 @@
 					</li>
 				</ul>
 			</div>
-		</nav>
+		</nav> -->
 		<!-- 2nd NAVBAR END -->
 
 		<!-- ABOUT -->
@@ -134,7 +141,7 @@
 				green technology in all its products. That's putting the power and germ-killing 
 				effects of clean and natural steam where it counts.
 			</p>
-			<div id="team"></div>
+			<!-- <div id="team"></div> -->
 			<p>
 				Sienna products have made millions of believers throughout Europe, and now 
 				we are bringing our intelligent and highly practical products to the U.S. 
@@ -145,7 +152,7 @@
 		<!-- ABOUT END -->
 
 		<!-- TEAM -->
-		<div class="gray-div text-div container-fluid">
+		<div class="gray-div text-div container-fluid" id="team">
 			<h5 class="title text-title">Management Team</h5>
 			<div class="row add-margin-left form-group">
 				<div class="col-1.5">

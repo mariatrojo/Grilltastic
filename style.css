@@ -102,9 +102,14 @@ a:hover, .navbar .collapse .navbar-nav .nav-link:hover {
 	padding: 0px 12px;
 }
 .icon {
+	vertical-align: text-bottom;
+}
+.icon, .icon2 {
 	position: relative;
 	width: 17px;
-	vertical-align: text-bottom;
+}
+.icon2 {
+	vertical-align: baseline;
 }
 .sticky-bar li .active {
 	color: white !important;
